@@ -46,3 +46,12 @@ func main() {
     }
     fmt.Println(string(item.Value))
 }
+
+/*
+This example connects to a Memcache server running on localhost:11211, stores a key-value pair 
+with key mykey and value myvalue, and then retrieves the value of mykey and prints it to the console.
+
+Note that the above code is just a simple example to illustrate how to use the memcache library in Go. 
+In a real-world application, you would typically use Memcache to cache frequently accessed data to 
+improve performance and reduce the load on your backend servers.
+*/
