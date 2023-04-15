@@ -51,3 +51,16 @@ func main() {
     }
     fmt.Println(val)
 }
+
+/*
+This example defines a Cache struct with Set and Get methods that use the Redis client to store 
+and retrieve key-value pairs. The NewCache function creates a new Redis client with default options 
+(connecting to a Redis server running on localhost:6379 with no password set).
+
+In the Set method, the redis.Set command is used to store a key-value pair with an expiration time. 
+In the Get method, the redis.Get command is used to retrieve the value associated with a given key. 
+If the key is not found, the method returns an empty string and no error.
+
+In the main function, a new cache is created using NewCache, and a value is stored using Set. 
+The value is then retrieved using Get and printed to the console.
+*/
